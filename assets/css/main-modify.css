@@ -8140,7 +8140,7 @@ button.list-group-item-danger.active:focus {
 }
 
 .panel-group {
-    margin-bottom: 576px
+    /*margin-bottom: 576px*/
 }
 
 .panel-group .panel {
@@ -8174,9 +8174,9 @@ button.list-group-item-danger.active:focus {
 }
 
 .panel-default>.panel-heading {
-    /* color:#333; */
-    /* background-color:#f5f5f5; */
-    /* border-color:#ddd */
+    color:#333;
+    background-color:#f5f5f5;
+    border-color:#ddd
 }
 
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
@@ -12510,7 +12510,7 @@ div#mainContent section#sectionAbout h2 {
 }
 
 div#mainContent section#sectionAbout>div.parallax {
-    background: url('../images/photo-salon-interior-with-marble-block-2121B_40P_1200x1027.jpg') 50% 0 no-repeat;
+    background: url('../images/20171103_parallax_CYL-Scalp-Lab-Solutions_1280x720.jpg') 50% 0 no-repeat;
     height: 640px;
     background-attachment: fixed;
     background-size: cover
@@ -16339,6 +16339,81 @@ section#sectionFooter div.copyright p span.claim {
     div#mainContent .framed {
         box-shadow: 1px 1px 3px #BBB
     }
+}
+
+div#mainContent section#sectionbookform div.bg {
+    background-image: url('../images/photo-exterior-building-by-kristian-melom-020-60_1200x900.jpg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-attachment: fixed;
+    color: black;
+    width: 100%
+}
+
+html.tablet div#mainContent section#sectionbookform div.bg,
+html.mobile div#mainContent section#sectionbookform div.bg {
+    background-position: 0 0 !important;
+    background-attachment: scroll
+}
+
+div#mainContent section#sectionbookform div.wrapper {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 50px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 30px
+}
+
+@media only screen and (max-width: 1199px) {
+    div#mainContent section#sectionbookform div.wrapper {
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px
+    }
+}
+
+@media only screen and (max-width: 588px) {
+    div#mainContent section#sectionbookform div.wrapper {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px
+    }
+}
+
+@media only screen and (max-width: 413px) {
+    div#mainContent section#sectionbookform div.wrapper {
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 10px
+    }
+}
+
+@media only screen and (max-width: 319px) {
+    div#mainContent section#sectionbookform div.wrapper {
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px
+    }
+}
+
+
+div#mainContent section#sectionbookform .form-header,
+div#mainContent section#sectionbookform div.parallax {
+    color: white
+}
+
+div#mainContent section#sectionbookform div.panel-body {
+    color: #333
+}
+
+div#mainContent section#sectionbookform div.panel-body .form-control {
+    border-color: rgb(169, 169, 169);
 }
 
 body#pageOnlineBooking div#mainContent {
