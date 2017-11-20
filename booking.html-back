@@ -143,8 +143,8 @@
 													        		- Vellus Hair<br>
 													        		- Short Life-Span<br>
 													        	</h6>
-													        	<label class="radio-inline"><input type="radio" name="Restoring" value="Restoring - Spa">Restoring - Spa</label>
-													        	<label class="radio-inline"><input type="radio" name="Restoring" value="Restoring - Salon">Restoring - Salon</label>
+													        	<label class="radio-inline"><input type="radio" name="restoring" id="restoring" value="Restoring - Spa">Restoring - Spa</label>
+													        	<label class="radio-inline"><input type="radio" name="restoring" id="restoring" value="Restoring - Salon">Restoring - Salon</label>
 													        	<hr>
 													        	<h5>Regrowth</h5>
 													        	<h6>
@@ -152,8 +152,8 @@
 													        		- Kenogen Loss<br>
 													        		- Aging Thinning<br>
 													        	</h6>
-													        	<label class="radio-inline"><input type="radio" name="Regrowth" value="Regrowth - Spa">Regrowth - Spa</label>
-													        	<label class="radio-inline"><input type="radio" name="Regrowth" value="Regrowth - Salon">Regrowth - Salon</label>
+													        	<label class="radio-inline"><input type="radio" name="regrowth" id="regrowth" value="Regrowth - Spa">Regrowth - Spa</label>
+													        	<label class="radio-inline"><input type="radio" name="regrowth" id="regrowth" value="Regrowth - Salon">Regrowth - Salon</label>
 													        	<hr>
 													        	<h5>Boosting</h5>
 													        	<h6>
@@ -162,8 +162,8 @@
 													        		- Lack of Malanin<br>
 													        		- Aging Thining<br>
 													        	</h6>
-													        	<label class="radio-inline"><input type="radio" name="Boosting" value="Boosting - Spa">Boosting - Spa</label>
-													        	<label class="radio-inline"><input type="radio" name="Boosting" value="Boosting - Salon">Boosting - Salon</label>
+													        	<label class="radio-inline"><input type="radio" name="boosting" id="boosting" value="Boosting - Spa">Boosting - Spa</label>
+													        	<label class="radio-inline"><input type="radio" name="boosting" id="boosting" value="Boosting - Salon">Boosting - Salon</label>
 													        </div>
 													      </div>
 													    </div>
@@ -181,9 +181,9 @@
 													        		- Highly compromised or lost cuticle<br>
 													        		- Damaged internal structure<br>
 													        	</h6>
-													        	<label class="radio-inline"><input type="radio" name="optradio" value="CYL Signature 4 Steps Hair Treat - Spa">Spa</label>
-													        	<label class="radio-inline"><input type="radio" name="optradio" value="CYL Signature 4 Steps Hair Treat - Salon">Salon</label>
-													        	<label class="radio-inline"><input type="radio" name="optradio" value="CYL Signature 4 Steps Hair Treat - Add On">Add On</label>
+													        	<label class="radio-inline"><input type="radio" name="signature" id="signature" value="CYL Signature 4 Steps Hair Treat - Spa">Spa</label>
+													        	<label class="radio-inline"><input type="radio" name="signature" id="signature" value="CYL Signature 4 Steps Hair Treat - Salon">Salon</label>
+													        	<label class="radio-inline"><input type="radio" name="signature" id="signature" value="CYL Signature 4 Steps Hair Treat - Add On">Add On</label>
 													        	<hr>
 													        	<h5>Intensive Repair 2 Step Hair Treat</h5>
 													        	<h6>
@@ -191,19 +191,19 @@
 													        		- Swollen cuticle layers<br>
 													        		- Weakened internal structur<br>
 													        	</h6>
-													        	<label class="radio-inline"><input type="radio" name="optradio" value="Intensive Repair 2 Step Hair Treat - Spa">Spa</label>
-													        	<label class="radio-inline"><input type="radio" name="optradio" value="Intensive Repair 2 Step Hair Treat - Salon">Salon</label>
-													        	<label class="radio-inline"><input type="radio" name="optradio" value="Intensive Repair 2 Step Hair Treat - Add On">Add On</label>
+													        	<label class="radio-inline"><input type="radio" name="intensive" id="intensive" value="Intensive Repair 2 Step Hair Treat - Spa">Spa</label>
+													        	<label class="radio-inline"><input type="radio" name="intensive" id="intensive" value="Intensive Repair 2 Step Hair Treat - Salon">Salon</label>
+													        	<label class="radio-inline"><input type="radio" name="intensive" id="intensive" value="Intensive Repair 2 Step Hair Treat - Add On">Add On</label>
 													        	<hr>
 													        	<h5>Deep Recovery Hair Treat</h5>
 													        	<h6>
-													        		- Balaned lipid layer<br>
+													        		- Balanced lipid layer<br>
 													        		- Sealed cuticle<br>
 													        		- Natural strength<br>
 													        	</h6>
-													        	<label class="radio-inline"><input type="radio" name="optradio" value="Deep Recovery Hair Treat - Spa">Spa</label>
-													        	<label class="radio-inline"><input type="radio" name="optradio" value="Deep Recovery Hair Treat - Salon">Salon</label>
-													        	<label class="radio-inline"><input type="radio" name="optradio" value="Deep Recovery Hair Treat - Add On">Add On</label>
+													        	<label class="radio-inline"><input type="radio" name="deep" id="deep" value="Deep Recovery Hair Treat - Spa">Spa</label>
+													        	<label class="radio-inline"><input type="radio" name="deep" id="deep" value="Deep Recovery Hair Treat - Salon">Salon</label>
+													        	<label class="radio-inline"><input type="radio" name="deep" id="deep" value="Deep Recovery Hair Treat - Add On">Add On</label>
 													        </div>
 													      </div>
 													    </div>
@@ -294,6 +294,7 @@
 			<p id="back-top">
 				<a href="#top"><span></span></a>
 			</p>
+			<p id="viewform"></p>
 			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 			<script type="text/javascript" src="assets/js/common.js"></script>
 			<script type="text/javascript" src="assets/js/common-004.js"></script>

@@ -1,0 +1,4 @@
+[11-Nov-2017 13:23:10 Asia/Singapore] PHP Parse error:  syntax error, unexpected ',' in /home/cylsg/public_html/booking/application/controllers/Forms.php on line 54
+[11-Nov-2017 14:16:50 Asia/Singapore] PHP Parse error:  syntax error, unexpected '', '' (T_CONSTANT_ENCAPSED_STRING), expecting '(' in /home/cylsg/public_html/booking/application/controllers/Forms.php on line 54
+[11-Nov-2017 14:16:53 Asia/Singapore] PHP Parse error:  syntax error, unexpected '', '' (T_CONSTANT_ENCAPSED_STRING), expecting '(' in /home/cylsg/public_html/booking/application/controllers/Forms.php on line 54
+[11-Nov-2017 14:48:21 Asia/Singapore] PHP Parse error:  syntax error, unexpected '$other_c' (T_VARIABLE) in /home/cylsg/public_html/booking/application/controllers/Forms.php on line 59

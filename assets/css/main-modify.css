@@ -4497,6 +4497,10 @@ input[type="range"] {
     width: 100%
 }
 
+input[type="date"] {
+    text-transform: uppercase;
+}
+
 select[multiple],
 select[size] {
     height: auto
@@ -10738,7 +10742,8 @@ ul.menu li a {
     padding: 12px 20px;
     font-size: 20px;
     text-transform: uppercase;
-    color: #000
+    color: #000;
+    padding: 18px 20px;
 }
 
 ul.menu li a:hover {
@@ -12069,6 +12074,25 @@ header .logo {
     float: left
 }
 
+@media (max-width: 1024px){
+    header .logo {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+    div.mm-toggle-wrap {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+#page header,
+#page header .logo,
+#page header .logo a,
+#page header .logo img {
+    max-height: 60px !important;
+}
+
 div.mm-toggle-wrap {
     margin-top: 4px;
     margin-bottom: 3px
@@ -12510,7 +12534,7 @@ div#mainContent section#sectionAbout h2 {
 }
 
 div#mainContent section#sectionAbout>div.parallax {
-    background: url('../images/20171103_parallax_CYL-Scalp-Lab-Solutions_1280x720.jpg') 50% 0 no-repeat;
+    background: url('../images/CYL-Scalp-Lab-Solutions-is-the-first-integrated-specialist-scalp-and-hair-care-centre_1280x720.jpg') 50% 0 no-repeat;
     height: 640px;
     background-attachment: fixed;
     background-size: cover
@@ -12567,6 +12591,55 @@ div#mainContent section#sectionSalon img {
     display: block;
     max-width: 100%;
     height: auto
+}
+
+div#mainContent section#sectionSalon button {
+    padding: 5px;
+    margin: 1px;
+}
+
+div#mainContent section#sectionSalon #myModal_salon img {
+    left: 0 !important;
+}
+
+#myModal_salon .carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+#myModal_salon .carousel-control .fa {
+    position: relative;
+    top: 50%;
+}
+
+#myModal_salon .carousel-control.left {
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+#myModal_salon .carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
 }
 
 @media only screen and (max-width: 588px) {
@@ -12787,7 +12860,7 @@ div#mainContent section#sectionServices div#servicesAccordion {
 }
 
 div#mainContent section#sectionServices div#servicesAccordion div.panel-heading {
-    background-image: url('../images/photo-union-square-bw_30_1200x1037.jpg');
+    background-image: url('../images/OUR-SERVICES-AND-PRICES_1200x1037.jpg');
     background-repeat: no-repeat
 }
 
@@ -13505,7 +13578,7 @@ div#mainContent section#sectionAppointments a.button {
     display: block;
     width: 50%;
     margin: auto;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     background-color: #777;
     border: none
 }
@@ -13581,7 +13654,7 @@ div#mainContent section#sectionAppointments p.primary {
 }
 
 div#mainContent section#sectionAppointments div.bg {
-    background-image: url('../images/photo-exterior-building-by-kristian-melom-020-60_1200x900.jpg');
+    background-image: url('../images/CYL-Scalp-Lab-Solutions-TO-BOOK-BY-PHONE-CALL_1200x900.jpg');
     background-repeat: no-repeat;
     background-position: left bottom;
     background-attachment: fixed;
@@ -16342,7 +16415,7 @@ section#sectionFooter div.copyright p span.claim {
 }
 
 div#mainContent section#sectionbookform div.bg {
-    background-image: url('../images/photo-exterior-building-by-kristian-melom-020-60_1200x900.jpg');
+    background-image: url('../images/CYL-Scalp-Lab-Solutions-TO-BOOK-BY-PHONE-CALL_1200x900.jpg');
     background-repeat: no-repeat;
     background-position: left bottom;
     background-attachment: fixed;
@@ -16414,6 +16487,15 @@ div#mainContent section#sectionbookform div.panel-body {
 
 div#mainContent section#sectionbookform div.panel-body .form-control {
     border-color: rgb(169, 169, 169);
+}
+
+div#mainContent section#sectionbookform div.panel-body textarea.form-control {
+    background-color: #888;
+    color: white
+}
+
+div#mainContent section#sectionbookform .alert {
+    margin-bottom: 15px
 }
 
 body#pageOnlineBooking div#mainContent {
