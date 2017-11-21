@@ -12598,11 +12598,11 @@ div#mainContent section#sectionSalon button {
     margin: 1px;
 }
 
-div#mainContent section#sectionSalon #myModal_salon img {
+div#mainContent section#sectionSalon #myCarousel_salon img {
     left: 0 !important;
 }
 
-#myModal_salon .carousel-control {
+#myCarousel_salon .carousel-control {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -12617,12 +12617,12 @@ div#mainContent section#sectionSalon #myModal_salon img {
     opacity: .5;
 }
 
-#myModal_salon .carousel-control .fa {
+#myCarousel_salon .carousel-control .fa {
     position: relative;
     top: 50%;
 }
 
-#myModal_salon .carousel-control.left {
+#myCarousel_salon .carousel-control.left {
     background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
     background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
     background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
@@ -12631,7 +12631,7 @@ div#mainContent section#sectionSalon #myModal_salon img {
     background-repeat: repeat-x;
 }
 
-#myModal_salon .carousel-control.right {
+#myCarousel_salon .carousel-control.right {
     right: 0;
     left: auto;
     background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
