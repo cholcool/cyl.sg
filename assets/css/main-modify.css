@@ -8426,6 +8426,16 @@ button.close {
     transform: translate(0, 0)
 }
 
+.modal.in .modal-middle {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .modal-open .modal {
     overflow-x: hidden;
     overflow-y: auto
@@ -8434,10 +8444,11 @@ button.close {
 .modal-dialog {
     position: relative;
     width: auto;
-    margin: 10px
+    margin: 0 auto;
 }
 
 .modal-content {
+    margin: 10px;
     position: relative;
     background-color: #fff;
     border: 1px solid #999;
@@ -8513,6 +8524,10 @@ button.close {
     width: 50px;
     height: 50px;
     overflow: scroll
+}
+
+.modal-fit {
+    width: fit-content !important;
 }
 
 @media (min-width:768px) {
@@ -12587,19 +12602,96 @@ div#mainContent section#sectionAbout div.textBlock {
     }
 }
 
+div#mainContent section#sectionSalon {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 588px) {
+    div#mainContent section#sectionSalon {
+        padding-bottom: 0;
+    }
+}
+
 div#mainContent section#sectionSalon img {
     display: block;
     max-width: 100%;
-    height: auto
+    height: auto;
+    margin: 0 auto;
 }
 
-div#mainContent section#sectionSalon button {
-    padding: 5px;
-    margin: 1px;
+div#mainContent section#sectionSalon .modal_buttom {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+div#mainContent section#sectionSalon .modal_buttom .modal_buttom_bggray {
+    background-color: rgba(0, 0, 0, .5);
+    display: block;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+div#mainContent section#sectionSalon .modal_buttom:hover .modal_buttom_bggray {
+    background-color:transparent
+}
+
+div#mainContent section#sectionSalon .modal_buttom_bgslide {
+    position: absolute;
+    top: 30%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: .4;
+}
+
+div#mainContent section#sectionSalon .modal_buttom:hover .modal_buttom_bgslide {
+    opacity: .7;
+}
+
+div#mainContent section#sectionSalon #myModal_salon .close_right {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    z-index: 999;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 588px) {
+    div#mainContent section#sectionSalon .modal_buttom_bgslide {
+        width: 50%;
+    }
 }
 
 div#mainContent section#sectionSalon #myCarousel_salon img {
     left: 0 !important;
+}
+
+div#mainContent section#sectionSalon #myCarousel_salon .carousel-inner>.item>img {
+    max-height: 540px;
+    margin: 0 auto;
+}
+
+@media (min-height: 1024px) {
+    div#mainContent section#sectionSalon #myCarousel_salon .carousel-inner>.item>img {
+        max-height: 900px;
+    }
+}
+
+@media (min-height: 768px) and (max-height: 1023px) {
+    div#mainContent section#sectionSalon #myCarousel_salon .carousel-inner>.item>img {
+        max-height: 700px;
+    }
+}
+
+@media (min-height: 320px) and (max-height: 414px) {
+    div#mainContent section#sectionSalon #myCarousel_salon .carousel-inner>.item>img {
+        max-height: 310px;
+    }
 }
 
 #myCarousel_salon .carousel-control {
@@ -12608,6 +12700,7 @@ div#mainContent section#sectionSalon #myCarousel_salon img {
     bottom: 0;
     left: 0;
     width: 15%;
+    height: 100%;
     font-size: 20px;
     color: #fff;
     text-align: center;
@@ -12642,19 +12735,9 @@ div#mainContent section#sectionSalon #myCarousel_salon img {
     background-repeat: repeat-x;
 }
 
-@media only screen and (max-width: 588px) {
-    div#mainContent section#sectionSalon div.col-xs-6 {
-        float: none;
-        width: 100%
-    }
-    div#mainContent section#sectionSalon div.col-xs-6 img {
-        margin-top: 10px
-    }
-}
-
 div#mainContent section#sectionOurTeam {
     padding-top: 120px;
-    padding-bottom: 60px
+    padding-bottom: 60px;
 }
 
 div#mainContent section#sectionOurTeam a[href=''] {
@@ -15985,6 +16068,7 @@ div#mainContent section#sectionContact div.contactText div#hoursAndSocial div.so
 }
 
 div#mainContent section#sectionContact div.contactText div#hoursAndSocial div.social ul.sociallinks {
+    padding-left: 0;
     list-style-type: none;
     list-style-position: outside;
     display: -webkit-flex;
